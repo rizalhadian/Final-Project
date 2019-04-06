@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <!-- fontawesom -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/portfolio.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./images/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+                    rizalhadian
+                </a>
+                <div class="collapse navbar-collapse " id="navbarToggler">
+                    <a class="nav-link btn btn-light btn-sm" href="./index.html">About</a>
+                    <a class="nav-link btn btn-light btn-sm" href="./exercises.html">Exercises</a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="">
+            <div class="container" style="background: #efefef; padding: 40px; height: 100%;">
+                <div class="row">
+                <!-- start -->
+                    <div id="all" class="row">
+                        <div class="col-md-6">
+                            <div class="view view-first" style="width:100%; height:300px;">
+                                <img src="./images/sc-1.png" />
+                                <div class="mask">
+                                    <h2>Exercise 1 - Profile</h2>
+                                    <p>The first exercise is to create profile or CV using html and css. And its the homepage of this website.</p>
+                                    <a href="./index.html" class="btn btn-primary">Link</a>
+                                </div> 
+                            </div> 
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <div class="view view-first" style="width:100%; height:300px;">
+                                <img src="./images/sc-5.png" />
+                                <div class="mask">
+                                <h2>Exercise 2 - Calculator</h2>
+                                <p>The second exercise is to create simple calculator using javascript, html, and css. And also i'm using math function from javascript.</p>
+                                <a href="./calculator.html" class="btn btn-primary">Link</a>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="view view-first" style="width:100%; height:300px;">
+                                <img src="./images/sc-3.png" />
+                                <div class="mask">
+                                <h2>Exercise 3 - Data Table</h2>
+                                <p>The third exercise is to data table from object or array. I'm using ajax to get data Star Wars Planets from <a href="swapi.co/">SWAPI</a>. And then i add filter to sort the planets.</p>
+                                <a href="./datatable.html" class="btn btn-primary">Link</a>
+                                </div> 
+                            </div> 
+                        </div>
+                    
+                    
+                    
+                    
+                    
+                  
+                  
+                    
+                  
+                  </div>
+                    <!-- end -->
+
+
+                </div>
+                
+            </div>
+        </div>
+
+        
+    </body>
+
+    <div class="modal fade" id="modalEmail" tabindex="-1" role="dialog" aria-labelledby="modalEmail" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Aw hello,</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form action="https://formspree.io/rizalhadian@gmail.com" onsubmit="return validation()" id="contact-me-form" method="POST">
+                            <div class="form-group">
+                                <input  type="text" name="name" class="form-control" placeholder="Tell me your name!" required="required" data-error="Name is required.">
+                                <div id="name-error"></div>
+                            </div>
+                            <div class="form-group">
+                                <input  type="email" name="email" class="form-control" placeholder="What's your email address?" required="required" data-error="Email is required.">
+                                <div id="email-error"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" class="form-control" rows="5" placeholder="What's your message?" required="required"></textarea>
+                                <div id="message-error"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block submit-button state-0">
+                                <span class="pre-state-msg"> <i class="fas fa-paper-plane"></i> Send </span>
+                                <span class="current-state-msg hide"> Checking.. </span>
+                                <span class="done-state-msg hide"> You will be redirected.. </span>
+                            </button>
+
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer" style="font-size: 70%">
+                Supported by&nbsp;<a href="https://formspree.io/"> formspree.io</a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/email-form.js"></script>
+
+</html>

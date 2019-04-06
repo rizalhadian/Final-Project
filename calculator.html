@@ -1,0 +1,205 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/calculator.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <!-- fontawesom -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        <script src="./js/calculator.js"></script>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./images/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+                    rizalhadian
+                </a>
+                <div class="collapse navbar-collapse " id="navbarToggler">
+                    <a class="nav-link btn btn-light btn-sm" href="./index.html">About</a>
+                    <a class="nav-link btn btn-light btn-sm" href="./exercises.html">Exercises</a>
+                </div>
+            </div>
+        </nav>
+
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="">
+                            <div class="about-me-exercise" style="color:black">
+                                <p>By the way this is my exercises on <img src="./images/hacktiv8.png" alt="hacktiv8 logo" height="30px;"> Javascript Development Course.
+                                    Actually i'm an IT Student but for some reason maybe i can't finish my study. Hopefully i can get full scholarship on Hacktiv8 so i can learn more about web dev and get certificate to prove that i can do code.
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="">
+                            <div class="about-me-content">
+                                <h3><b>About Me</b></h3>
+                                <div class="form-group row">
+                                    <label class="col-sm-5"><i class="fas fa-user"></i> Full Name</label>
+                                    <div class="col-sm-7">
+                                        : Rizal Hadiansyah
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-5"><i class="fas fa-envelope"></i> Email</label>
+                                    <div class="col-sm-7">
+                                        : rizalhadian@gmail.com
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-5"><i class="fas fa-phone"></i> Phone Number</label>
+                                    <div class="col-sm-7">
+                                        : 6281353358388
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="form-group row">
+                                    <div class="col-sm-4"><a target="_blank" href="https://www.linkedin.com/in/rizalhadian/" class="btn btn-linkedin btn-lg"> <i class="fab fa-linkedin"></i> </a></div>    
+                                    <div class="col-sm-4"><a target="_blank" href="https://www.facebook.com/syah.hadian.rizal" class="btn btn-facebook btn-lg"> <i class="fab fa-facebook"></i> </a></div>    
+                                    <div class="col-sm-4"><a target="_blank" href="https://www.instagram.com/rizalhadian/" class="btn btn-instagram btn-lg"> <i class="fab fa-instagram"></i> </a></div>    
+                                </div>
+                            </div>
+                        </div>
+                                                
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="about-me-section">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-lg-12">
+                        
+                        <div class="">
+                            <div class="about-me-content">
+                                
+
+                                <div class="container">
+                                    <div class="col-lg-12 calc-screen">
+                                        <h1 class="calc-screen-text" id="calc_screen_text" style="text-align: right;">0</h1>
+                                    </div>
+                                </div>
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" id="history-minus"  onclick="addSomething(this.value)" value="<<"><<</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" id="history-plus"  onclick="addSomething(this.value)" value=">>">>></button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="(">(</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value=")">)</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="%">mod</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="hapusSemua()">C / AC</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="sin">sin</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" disabled style="background:black; border: 0;">&nbsp;</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="7">7</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="8" id="btn-8">8</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="9" id="btn-9">9</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value=":">:</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="cos">cos</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="log">log</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="4" id="btn-4">4</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="5" id="btn-5">5</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="6" id="btn-6">6</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="x">x</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="tan">tan</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="akar">&radic;</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="1" id="btn-1">1</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="2" id="btn-2">2</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="3" id="btn-3">3</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="-">-</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="pi">&Pi;</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="pangkat">^</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="0" id="btn-0">0</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value=".">.</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-primary btn-calc btn-block" onclick="hasil()">=</button>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button class="btn btn-secondary btn-calc btn-block" onclick="addSomething(this.value)" value="+">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                                              
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+    </body>
+</html>
